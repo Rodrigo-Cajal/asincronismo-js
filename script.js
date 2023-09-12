@@ -20,8 +20,8 @@ searchButton.addEventListener("click", async () => {
 
         const pokemonName = data.name;
         const pokemonTypes = data.types.map((type) => type.type.name).join(", ");
-        const pokemonHeight = (data.height / 10).toFixed(1); // Convert to meters
-        const pokemonWeight = (data.weight / 10).toFixed(1); // Convert to kilograms
+        const pokemonHeight = (data.height / 10).toFixed(1);
+        const pokemonWeight = (data.weight / 10).toFixed(1);
         const pokemonImage = data.sprites.front_default;
 
         const cardHTML = `
